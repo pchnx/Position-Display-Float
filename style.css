@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent-container {
+    margin: 15px;
+    background-color: beige;
+    border: 2px solid black;
+    width: 75vw;
+    height: 50vw;
+    padding: 5px;
+}
+
+.child {
+    padding: 25px;
+}
+
+.child1 {
+    position: static;
+    border: 2px solid red;
+    background-color: red;
+}
+/*
+Relative position
+*It's just like static
+*can be changed using top, bottom, left, right and z-index
+*Values are relative
+*/
+
+.child2 {
+    position: relative;
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+}
+
+/*
+Absolute position:
+*Removes the element from the flow
+*Positions relative to parent container
+*if parent is static, it will move outside of the parent container
+*if parent is relative, it will move within the parent container
+*can be changed using top, bottom, left, right and z-index
+*/
+
+.child3 {
+    position:
+    border: 2px solid green;
+    background-color: green;
+}
+/*
+Fixed position:
+*Like absolute
+*Positioned to viewport
+*Doesn't move when scrolling
+
+*/
+
+.child4 {
+    position:
+    border: 2px solid teal;
+    background-color: teal;
+}
+/*
+Sticky position:
+* mix of relative and fixed
+* relative to the flow
+* position definition used for when you start scrolling
+* stays fixed when scrolling; relative when stationary
+*/
+
+.child5 {
+    position:sticky;
+    top: 
+    border: 2px solid gray;
+    background-color: gray;
+}
+
+display-container {
+    margin-top: 2em;
+}
+/*
+Display Property
+
+*/
+
+.block-container {
+    border: 2px solid black;
+    margin: 5px;
+}
+.float-container {
+    margin-top: 2em;
+    border: 2px solid blue;
+    width: 50vw;
+    height: 25vw;
+}
+
+.float-box {
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    background-color: rebeccapurple;
+    color: white;
+
+    float: right;
+}
